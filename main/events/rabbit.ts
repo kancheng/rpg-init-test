@@ -1,20 +1,19 @@
 import { RpgEvent, EventData, RpgPlayer } from '@rpgjs/server'
 
 @EventData({
-    name: 'EV-1', 
+    name: 'EV-2', 
     hitbox: {
         width: 32,
         height: 16
     }
 })
-export default class VillagerEvent extends RpgEvent {
+export default class RabbitEvent extends RpgEvent {
     onInit() {
-        this.setGraphic('villager')
+        this.setGraphic('rabbit')
     }
     async onAction(player: RpgPlayer) {
-        await player.showText('Villager: I give you 90 gold.', {
+        await player.showText('Rabbit: 水獺好啊!! 我是兔子!! Hello World!!', {
             talkWith: this
         })
-        player.gold += 90
     }
-} 
+}
