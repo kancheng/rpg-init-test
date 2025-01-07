@@ -8,6 +8,19 @@ To create a new project based on this template using [degit](https://github.com/
 npx degit rpgjs/starter rpg-app
 cd rpg-app
 ```
+## Note
+
+- https://playground.rpgjs.dev/
+
+- https://junkhunt.net/vx/charachip.shtml
+
+```
+npx degit rpgjs/starter my-rpg-game
+cd my-rpg-game
+npm install --save-dev cross-env
+npx cross-env RPG_TYPE=rpg npm run dev
+```
+
 ## Get started
 
 Install the dependencies...
