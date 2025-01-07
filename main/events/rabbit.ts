@@ -12,7 +12,7 @@ export default class RabbitEvent extends RpgEvent {
         this.setGraphic('rabbit')
     }
     async onAction(player: RpgPlayer) {
-        await player.showText('Rabbit: 水獺好啊!! 我是兔子!! Hello World!!', {
+        await player.showText('Rabbit: 水獺好啊!! 我是兔子!!', {
             talkWith: this
         })
     }

@@ -12,7 +12,7 @@ export default class KoalaEvent extends RpgEvent {
         this.setGraphic('koala')
     }
     async onAction(player: RpgPlayer) {
-        await player.showText('Koala: 水獺好啊!! 我是無尾熊!! Hello World!!', {
+        await player.showText('Koala: 水獺好啊!! 我是無尾熊!!', {
             talkWith: this
         })
     }
